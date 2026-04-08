@@ -2531,6 +2531,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .section {
+    padding: 4rem 0;
+  }
+
   .about-stage {
     justify-items: stretch;
   }
@@ -2555,6 +2559,20 @@ h3 {
 
   .contact-form-wrap {
     grid-template-columns: 1fr;
+  }
+
+  .section-requests .side-note,
+  .section-quiz .side-note,
+  .about-note {
+    display: none;
+  }
+
+  .testimonial-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial-featured {
+    grid-column: 1 / -1;
   }
 
   .quiz-stage {
@@ -2689,6 +2707,59 @@ h3 {
     overflow: clip;
   }
 
+  .section {
+    padding: 3.45rem 0;
+  }
+
+  .hero-secondary span,
+  .hero-trust .mini-card:nth-child(3),
+  .floating-note--bottom,
+  .request-grid .request-card:nth-child(n + 5),
+  .about-text-grid .about-text-card:nth-child(3),
+  .section-process .section-intro p:last-of-type,
+  .value-grid .value-card:nth-child(n + 5),
+  .testimonial-layout .testimonial-card:last-child,
+  .section-cta .cta-copy p:last-of-type,
+  .contact-intuition,
+  .contact-card--phone,
+  .footer-brand p,
+  .footer-nav {
+    display: none;
+  }
+
+  .about-stage {
+    display: grid;
+    justify-items: center;
+    margin-top: 0.35rem;
+  }
+
+  .about-photo {
+    width: min(100%, 22rem);
+  }
+
+  .contact-form-info {
+    display: block;
+    padding: 0;
+    margin-top: 0.25rem;
+  }
+
+  .contact-form-info::before {
+    content: none;
+  }
+
+  .contact-form-info > .contact-card-label,
+  .contact-form-info h3,
+  .contact-form-info .contact-form-lead,
+  .contact-form-info .contact-form-points {
+    display: none;
+  }
+
+  .contact-map-card {
+    display: block;
+    margin-top: 0;
+    min-height: 15rem;
+  }
+
   .hero-title {
     max-width: 100%;
     font-size: clamp(2.2rem, 9vw, 3.25rem);
@@ -2738,6 +2809,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .hero-trust {
+    margin-top: 1rem;
+  }
+
   .request-grid,
   .value-grid,
   .testimonial-layout,
@@ -2747,6 +2822,47 @@ h3 {
 
   .testimonial-featured {
     grid-column: auto;
+  }
+
+  .request-grid,
+  .value-grid,
+  .testimonial-layout {
+    gap: 0.8rem;
+    margin-top: 1.25rem;
+  }
+
+  .process-grid {
+    gap: 0.8rem;
+    margin-top: 0.95rem;
+  }
+
+  .cta-shell,
+  .contact-shell {
+    gap: 1rem;
+  }
+
+  .contact-form-wrap {
+    margin-top: 0.7rem;
+  }
+
+  .application-form {
+    padding: 1.15rem;
+  }
+
+  .contact-card,
+  .cta-action-card,
+  .process-card,
+  .value-card,
+  .testimonial-card,
+  .testimonial-featured,
+  .request-card,
+  .mini-card,
+  .faq-item {
+    padding: 1.1rem;
+  }
+
+  .footer-shell {
+    padding: 1.35rem 1rem 1.5rem;
   }
 
   .mobile-bar {
@@ -2831,10 +2947,47 @@ h3 {
     gap: 1.35rem;
   }
 
+  .section {
+    padding: 3.05rem 0;
+  }
+
+  .hero-trust {
+    display: none;
+  }
+
+  .testimonial-layout .testimonial-card {
+    display: none;
+  }
+
+  .contact-grid .contact-card--telegram p,
+  .contact-grid .contact-card--featured p,
+  .cta-actions-panel .cta-action-card p,
+  .faq-layout .section-intro p,
+  .contacts-copy .lead {
+    display: none;
+  }
+
+  .footer-contacts {
+    gap: 0.6rem;
+  }
+
+  .footer-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
   .hero-stage {
     width: min(100%, 24rem);
     padding-top: 1.4rem;
     overflow: clip;
+  }
+
+  .about-photo {
+    width: min(100%, 20rem);
+  }
+
+  .contact-map-card {
+    min-height: 13.5rem;
   }
 
   .floating-note--top {
@@ -2849,10 +3002,6 @@ h3 {
   .floating-note {
     max-width: 11.5rem;
     padding: 0.85rem 0.9rem;
-  }
-
-  .section {
-    padding: 4.2rem 0;
   }
 
   .section-intro h2,
